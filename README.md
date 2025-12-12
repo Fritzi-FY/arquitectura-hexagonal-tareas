@@ -61,27 +61,27 @@ Este sistema sigue estrictamente la Arquitectura Hexagonal, dividiendo el proyec
             Archivo index.js que une los casos de uso con los adaptadores
 
 📁 2. Estructura de Carpetas
-        src/
-        ├── dominio
-        │     ├── entidades/
-        │     │     └── Tarea.js
-        │     ├── puertos/
-        │     │     └── RepositorioTareas.js
-        │     └── casos-de-uso/
-        │           ├── CrearTarea.js
-        │           ├── ListarTareas.js
-        │           ├── CompletarTarea.js
-        │           └── EliminarTarea.js
-        │
-        ├── adaptadores
-        │     ├── entrada/
-        │     │     └── web/
-        │     │           └── app.js
-        │     └── salida/
-        │           ├── RepoMemoria.js
-        │           └── RepoPostgres.js
-        │
-        └── index.js
+                src/
+                ├── dominio
+                │     ├── entidades/
+                │     │     └── Tarea.js
+                │     ├── puertos/
+                │     │     └── RepositorioTareas.js
+                │     └── casos-de-uso/
+                │           ├── CrearTarea.js
+                │           ├── ListarTareas.js
+                │           ├── CompletarTarea.js
+                │           └── EliminarTarea.js
+                │
+                ├── adaptadores
+                │     ├── entrada/
+                │     │     └── web/
+                │     │           └── app.js
+                │     └── salida/
+                │           ├── RepoMemoria.js
+                │           └── RepoPostgres.js
+                │
+                └── index.js
 
 
 Esta estructura garantiza separación de responsabilidades, mantener el dominio limpio y facilitar reemplazar tecnologías externas sin modificar la lógica interna.
